@@ -1,0 +1,20 @@
+<div class="charts-page">
+  <div class="chart-layout">
+    <div class="clock-section">
+      <div class="glow-ring">
+        <div class="clock">
+          <div class="time">{{ currentTime }}</div>
+          <div class="date">{{ currentDate }}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-wrapper">
+      <canvas baseChart
+              [data]="chartData"
+              [options]="chartOptions"
+              chartType="line">
+      </canvas>
+    </div>
+  </div>
+</div>

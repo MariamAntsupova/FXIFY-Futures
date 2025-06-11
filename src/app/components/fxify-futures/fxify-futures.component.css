@@ -1,0 +1,110 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 6rem;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.left-panel {
+  max-width: 48%;
+  min-width: 300px;
+  flex: 1;
+}
+
+.right-panel {
+  max-width: 40%;
+  min-width: 280px;
+  flex: 1;
+}
+
+.trading-button{
+  color: #fff;
+  padding: 0.5rem 1rem;
+  background: #6949fd66;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.trading-button:hover{
+background-color: #32367b9c;
+}
+
+.floating-button {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.8rem 1.2rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
+  color: #eee;
+  width: fit-content;
+  border: 1px solid rgba(255,255,255,0.1);
+  cursor: pointer;
+}
+
+.floating-button .learn-more {
+  color: var(--violet);
+}
+
+.headline {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 2.5rem;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.stats div strong {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.info-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-panel,
+  .right-panel {
+    max-width: 90%;
+  }
+
+  .headline {
+    font-size: 2rem;
+  }
+  .right-panel, .left-panel{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+

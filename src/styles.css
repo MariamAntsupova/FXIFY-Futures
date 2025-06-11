@@ -1,1 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    margin:0;
+    padding: 0%;
+    background: radial-gradient(circle at center, #0e0f1a, #070a13);
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>'), auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+.fullscreen-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #ccc;
+}
+a:hover{
+    font-size: 1.001rem;
+      color: white;
+}
+
+button {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  background: #111;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, #6949fd66, transparent 60%);
+  animation: moveGlow 4s infinite linear;
+  z-index: 0;
+}
+
+button:hover {
+  background-color: #6949fd;
+}
+@keyframes moveGlow {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width:600px){
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

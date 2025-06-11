@@ -1,0 +1,23 @@
+<div class="loader-container" *ngIf="showLoader">
+  <div class="loader-grid">
+    <div class="top">
+        <div class="top-left">Loading <br> your experience...</div>
+        <div class="top-right">{{ percentage }}%</div>
+    </div>
+    <div>
+        <div class="center-text">{{ letters }}</div>
+    </div>
+    <div class="bottom">
+        <div class="text">
+            <p>Trading program</p>
+            <p>Loved by traders</p>
+            <p>Easy way to get started</p>
+        </div>
+        <div class="progress-line">
+            <div class="progress-fill" [style.width.%]="percentage"></div>
+        </div>
+    </div>
+
+  </div>
+  <app-particles></app-particles>
+</div>

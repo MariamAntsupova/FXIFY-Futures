@@ -1,0 +1,89 @@
+.top{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.comparison-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+.section-btn {
+  background: transparent;
+  border: 1px solid #b78af2;
+  color: #b78af2;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.section-btn:hover {
+  background-color: #b78af2;
+  color: #0b0c1d;
+}
+
+.comparison-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #b78af2;
+}
+
+.divider-line {
+  width: 80%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 2rem auto;
+}
+
+.comparison-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.comparison-card {
+  cursor: pointer;
+  background: #11122597;
+  border: 2px solid #b78af2;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  width: 300px;
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 10px rgba(183, 138, 242, 0.4);
+}
+
+.comparison-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #b78af2;
+}
+
+.comparison-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.comparison-card ul {
+  text-align: left;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.comparison-card li::before {
+  content: "• ";
+  color: #b78af2;
+}

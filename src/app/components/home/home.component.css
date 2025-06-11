@@ -1,0 +1,40 @@
+:root {
+  --violet: #6949fd;
+  --bg-dark: #0b0c1d;
+  --text-light: #ffffff;
+  --btn-glow: rgba(255, 255, 255, 0.2);
+  z-index: 8;
+}
+
+:host {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-dark);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-light);
+  overflow-x: hidden;
+}
+
+.parallax-background {
+  background-color: var(--bg-dark);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+  padding: 2rem;
+}
+
+
+@media (max-width: 600px) {
+  .parallax-background {
+    padding: 1.5rem 1rem;
+  }
+}

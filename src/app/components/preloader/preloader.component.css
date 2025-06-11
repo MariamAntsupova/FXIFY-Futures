@@ -1,0 +1,85 @@
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background-color: #070a13;
+}
+
+.loader-grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+    margin: 5rem 3rem 0rem;
+}
+
+.top-left {
+    grid-area: top-left;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.top-right {
+    grid-area: top-right;
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.center-text {
+    grid-area: logo;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.center-text img {
+    height: 40px;
+}
+.text{
+    display: flex;
+    flex-direction: row;
+    color: #888;
+    font-size: 0.9rem;
+    justify-content: space-between;
+}
+
+.progress-line {
+    grid-area: progress;
+    width: 100%;
+    height: 6px;
+    background: #070a13;
+    border-radius: 3px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #00D4FF;
+    background: linear-gradient(90deg,rgba(0, 212, 255, 1) 0%, rgba(3, 134, 204, 1) 22%, rgba(9, 9, 121, 1) 80%,#070a13 100%);
+    transition: width 0.3s ease;
+    border-radius: 4px;
+}
+
+body {
+    margin: 0;
+    background: #000;
+}
+
+app-particles{
+    opacity: 20%;
+}

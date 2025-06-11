@@ -1,0 +1,150 @@
+footer {
+  background: #0a0a1a;
+  color: #cfd1ff;
+  padding: 3rem 2rem;
+  font-family: 'Inter', sans-serif;
+  border-radius: 2rem 2rem 0 0;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.footer-brand {
+  flex: 1 1 300px;
+  max-width: 320px;
+}
+
+.description {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #c3c5de;
+}
+
+.footer-sections {
+  display: flex;
+  gap: 4rem;
+  flex: 2 1 600px;
+  flex-wrap: wrap;
+}
+
+.section h4 {
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section li {
+  margin-bottom: 0.5rem;
+}
+
+.section a {
+  color: #cfd1ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.section a:hover {
+  color: #a782ff;
+}
+
+.newsletter p {
+  margin-bottom: 0.5rem;
+  color: #c3c5de;
+}
+
+.input-group {
+  display: flex;
+  background: #1e1f35;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 0.75rem 1rem;
+  color: white;
+}
+
+.input-group input::placeholder {
+  color: #888ca1;
+}
+
+.input-group button {
+  background: linear-gradient(to right, #6b47ff, #b388ff);
+  border: none;
+  padding: 0 1.25rem;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.input-group button:hover {
+  background: linear-gradient(to right, #7e5eff, #caa3ff);
+}
+
+.newsletter small {
+  display: block;
+  color: #999cba;
+  font-size: 0.75rem;
+}
+
+.divider-glow {
+  margin: 3rem 0;
+  height: 1px;
+  background: radial-gradient(circle, #865dff 0%, transparent 80%);
+  opacity: 0.5;
+}
+
+.footer-disclaimer {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.75rem;
+  color: #8586a3;
+}
+
+.footer-disclaimer h5 {
+  margin-bottom: 0.3rem;
+  color: #a1a3cc;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-sections {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group input,
+  .input-group button {
+    width: 100%;
+  }
+}
