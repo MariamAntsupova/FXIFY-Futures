@@ -1,18 +1,25 @@
-<div class="parallax-background">
-    <app-nav-bar></app-nav-bar>
-    <section id="fxify-futures" class="section-block">
-        <app-fxify-futures></app-fxify-futures>
-    </section>
-    <section id="plans" class="section-block">
-        <app-plans></app-plans>
-    </section>
-    <section id="how-it-works" class="section-block">
-        <app-how-it-works></app-how-it-works>
-    </section>
-    <section id="affiliate" class="section-block"> 
-        <app-affiliate></app-affiliate>
-    </section>
-    <section id="faq" class="section-block"> 
-        <app-charts></app-charts>
-    </section>
-</div>
+<section id="home">
+    <div class="parallax-background">
+        <section id="fxify-futures" class="section-block">
+            <app-fxify-futures></app-fxify-futures>
+        </section>
+        <section id="plans" class="section-block">
+            <app-plans></app-plans>
+        </section>
+        <section id="how-it-works" class="section-block">
+            <app-how-it-works></app-how-it-works>
+        </section>
+        <section id="affiliate" class="section-block"> 
+            <app-affiliate></app-affiliate>
+        </section>
+        <section id="faq" class="section-block"> 
+            <app-charts></app-charts>
+        </section>
+    </div>
+    <button class="scroll-to-top"
+            *ngIf="showScrollButton"
+            [class.show]="showScrollButton"
+            (click)="scrollToTop()">
+    ↑
+    </button>
+</section>

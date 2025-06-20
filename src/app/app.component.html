@@ -1,4 +1,8 @@
 <app-preloader></app-preloader>
-<app-home></app-home>
+<app-nav-bar></app-nav-bar>
+<ng-container *ngIf="isHomePage">
+    <app-home></app-home>
+</ng-container>
 <app-background></app-background>
+<router-outlet *ngIf="!isHomePage"></router-outlet>
 <app-footer></app-footer>
